@@ -1,5 +1,5 @@
 package Prepration.Search;
-
+//time complexity is O(1)
 public class Interpolation {
     public static void main(String[] args) {
         interpolationSearch(new int[]{10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47},42);

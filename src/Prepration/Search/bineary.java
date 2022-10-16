@@ -1,5 +1,5 @@
 package Prepration.Search;
-
+//Time complexity is O(Log n)
 public class bineary {
     public static void main(String[] args) {
         binarySearch(new int[]{10, 20, 30, 50, 60, 80, 110, 130, 140, 170},110);
