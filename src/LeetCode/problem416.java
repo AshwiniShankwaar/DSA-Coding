@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class problem416 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
@@ -25,23 +26,47 @@ public class problem416 {
 
 }
 class solution{
-    int m[][];
-    public boolean canPartition(int[] nums) {
+    public boolean canPartition(int[] nums){
+        int sum = 0;
+
+        for (int num : nums) {
+            sum += num;
+        }
+
+        if ((sum & 1) == 1) {
+            return false;
+        }
+        sum /= 2;
+
+        int n = nums.length;
+        boolean[] dp = new boolean[sum+1];
+        Arrays.fill(dp, false);
+        dp[0] = true;
+
+        for (int num : nums) {
+            for (int i = sum; i > 0; i--) {
+                if (i >= num) {
+                    dp[i] = dp[i] || dp[i-num];
+                }
+            }
+        }
+
+        return dp[sum];
+    }
+    //TLE
+    /*public boolean canPartition(int[] nums) {
         boolean o =false;
         int sum = 0;
         for (int x:nums) {
             sum = sum+x;
         }
         int w = sum/2;
-//        m = new int[w+1][nums.length+1];
-//        for(int i = 0;i< nums.length;i++) m[0][i] = -1;
-//        for(int i = 0;i<=w;i++) m[i][0] = -1;
         if(sum%2 ==0){
 
             int x = check(nums,0,w,0);
             if (x == 2){
                 o = true;
-            }else if(x<=2){
+            }else if(x>=2){
                 return true;
             }
             return o;
@@ -60,5 +85,5 @@ class solution{
         int y = check(nums,n+1,w,count);
         x += y;
         return x;
-    }
+    }*/
 }
