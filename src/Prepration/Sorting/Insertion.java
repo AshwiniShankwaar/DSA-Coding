@@ -11,7 +11,7 @@ public class Insertion {
             System.out.println(arr[i]);
         }
     }
-    public static int[] sort(int[] arr){
+    private static int[] sort(int[] arr){
         for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
             int j = i-1;

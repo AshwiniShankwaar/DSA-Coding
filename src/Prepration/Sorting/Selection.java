@@ -11,7 +11,7 @@ public class Selection {
             System.out.println(arr[i]);
         }
     }
-    public static int[] SelectionSort(int[] arr){
+    private static int[] SelectionSort(int[] arr){
         for(int i = 0;i<arr.length-1;i++){
             int min = i;
             for(int j = i+1;j< arr.length;j++){
