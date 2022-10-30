@@ -9,7 +9,7 @@ public class MeregSort {
     }
     public static void merge(int arr[]){
        int n = arr.length;
-       if(n>2) return;
+       if(n<2) return;
        int mid = n/2;
        int left[] = new int[mid];
        int right[] = new int[n-mid];
