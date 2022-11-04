@@ -1,33 +1,19 @@
 package GFG;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Arrays;
-
-public class sortAnArray {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("test.txt"));
-        String data = bufferedReader.readLine();
-        String[] arr = data.split(" ");
-        int[] a = new int[arr.length];
-        int i = 0;
-        for (String k:arr) {
-            a[i] = Integer.parseInt(k);
-            i++;
-        }
-
-        int[] x = sortArr(a, arr.length);
-        Arrays.sort(a);
-        for (int j = 0; j < a.length; j++) {
-            if(x[j]!=a[j]){
-                System.out.println(x[i]+" "+a[i]);
-            }
-        }
+public class NthSmaller {
+    public static void main(String[] args) {
+        System.out.println(kthSmallest(new int[]{7,10,4,3,20,15},0,6,3));
     }
-    static int[] sortArr(int[] arr, int n)
+    public static int kthSmallest(int[] arr, int l, int r, int k)
     {
+        int out = 0;
+        int[] sortarr=mergesort(arr);
+        out = sortarr[r-k];
+        return out;
+    }
+
+    public static int[] mergesort(int[] arr) {
+        int n = arr.length;
         int[] left = null;
         int[] right = null;
         if(n<2) return arr;
@@ -51,13 +37,12 @@ public class sortAnArray {
                 right[i-mid] = arr[i];
             }
         }
-        int[] l = sortArr(left, left.length);
-        int[] r =sortArr(right, right.length);
-        arr = sorted(l,r,arr);
+        int[] l = mergesort(left);
+        int[] r =mergesort(right);
+        arr = sort(l,r,arr);
         return arr;
     }
-
-    private static int[] sorted(int[] l, int[] r, int[] arr) {
+    public static int[] sort(int[] l,int[] r,int[] arr){
         int i,j,k,nl,nr;
         i=j=k = 0;
         nr = r.length;
@@ -85,5 +70,4 @@ public class sortAnArray {
         }
         return arr;
     }
-
 }

@@ -1,33 +1,37 @@
 package LeetCode;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SubSetSumProblem {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
         //just for the file input test
-//        BufferedReader bufferedReader = new BufferedReader(new FileReader("test.txt"));
-//        String data = bufferedReader.readLine();
-//        String[] dataset = data.split(" ");
-//        for (String s: dataset) {
-//            String set = s.replaceAll("\\(","")
-//                    .replaceAll("\\)","")
-//                    .replaceAll("\\[","")
-//                    .replaceAll("]"," ");
-//            String[] arraySet = set.split(" ");
-//            String[] arr = arraySet[0].split(",");
-//            long[] l = new long[arr.length];
-//            for (int i = 0;i< arr.length;i++) {
-//                l[i] = Long.parseLong(arr[i]);
-//            }
-//            long sum = Long.parseLong(arraySet[1]);
-        ArrayList<Integer> out = subset(new int[]{5,8,3,2,9,11,55},33);
-        for (int i:out) {
-            System.out.print(i+" ");
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("test.txt"));
+        String data = bufferedReader.readLine();
+        String[] dataset = data.split(" ");
+        for (String s: dataset) {
+            String set = s.replaceAll("\\(", "")
+                    .replaceAll("\\)", "")
+                    .replaceAll("\\[", "")
+                    .replaceAll("]", " ");
+            String[] arraySet = set.split(" ");
+            String[] arr = arraySet[0].split(",");
+            int[] l = new int[arr.length];
+            for (int i = 0; i < arr.length; i++) {
+                l[i] = Integer.parseInt(arr[i]);
+            }
+            long sum = Long.parseLong(arraySet[1]);
+            ArrayList<Integer> out = subset(l, 15);
+            for (int i : out) {
+                System.out.print(i + " ");
+            }
         }
 
     }
 
-    private static ArrayList<Integer> subset(int[] arr, int sum) {
+    public static ArrayList<Integer> subset(int[] arr, int sum) {
         ArrayList<Integer> out = new ArrayList<>();
         Boolean[][] r = new Boolean[arr.length+1][sum+1];
         for (int i = 0; i < sum+1; i++) {
