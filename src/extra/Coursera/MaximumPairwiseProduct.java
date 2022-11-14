@@ -1,8 +1,6 @@
-package Coursera;
+package extra.Coursera;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MaximumPairwiseProduct {
