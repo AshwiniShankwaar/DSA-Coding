@@ -13,7 +13,7 @@ public class KadanesAlgorithm {
             arr[i] = Integer.parseInt(str[i]);
         }
 //        System.out.println(maxSubarraySum(arr, arr.length));
-        System.out.println(maxSubarraySum(new int[]{-1,-2,-3,-4,-5},5));
+        System.out.println(maxSubarraySum(new int[]{-2,1,-3,4,-1,2,1,-5,4},9));
     }
     public static long maxSubarraySum(int arr[], int n){
         // Your code here
