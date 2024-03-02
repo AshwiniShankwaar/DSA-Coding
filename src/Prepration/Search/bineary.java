@@ -11,6 +11,7 @@ public class bineary {
             int mid = (s+e)/2;
             if(arr[mid] == key){
                 System.out.println(mid+1);
+                break;
             }else if(arr[mid]<key){
                 s = mid+1;
             }else if(arr[mid]>key){
