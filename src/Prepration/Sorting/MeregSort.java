@@ -31,7 +31,7 @@ public class MeregSort {
         int i, j,k;
         i = j = k = 0;
         while(i<nl && j<nr){
-            if(left[i]<=right[i]){
+            if(left[i]<=right[j]){
                 arr[k] = left[i];
                 i++;
             }else{
