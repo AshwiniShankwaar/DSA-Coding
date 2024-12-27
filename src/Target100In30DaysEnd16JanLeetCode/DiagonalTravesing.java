@@ -1,4 +1,4 @@
-package Target100In30DaysLeetCode;
+package Target100In30DaysEnd16JanLeetCode;
 /**
  * Question:
  * Given an m x n matrix mat, return an array of all the elements of the array in a diagonal order.

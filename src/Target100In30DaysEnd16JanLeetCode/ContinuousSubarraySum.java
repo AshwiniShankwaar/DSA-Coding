@@ -1,7 +1,6 @@
-package Target100In30DaysLeetCode;
+package Target100In30DaysEnd16JanLeetCode;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 
 /**
  * Given an integer array nums and an integer k, return true if nums has a good subarray or false otherwise.

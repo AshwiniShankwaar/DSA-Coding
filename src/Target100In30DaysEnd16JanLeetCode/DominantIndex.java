@@ -1,4 +1,4 @@
-package Target100In30DaysLeetCode;
+package Target100In30DaysEnd16JanLeetCode;
 
 /** Question 747
  * You are given an integer array nums where the largest integer is unique.

@@ -1,6 +1,6 @@
-package Target100In30DaysLeetCode.testCases;
+package Target100In30DaysEnd16JanLeetCode.testCases;
 
-import Target100In30DaysLeetCode.PlusOne;
+import Target100In30DaysEnd16JanLeetCode.PlusOne;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

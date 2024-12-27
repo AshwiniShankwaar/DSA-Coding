@@ -1,15 +1,12 @@
-package Target100In30DaysLeetCode.testCases;
+package Target100In30DaysEnd16JanLeetCode.testCases;
 
-import Target100In30DaysLeetCode.SubarraySumEqualsK;
+import Target100In30DaysEnd16JanLeetCode.SubarraySumEqualsK;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SubarraySumEqualsKTest {
 

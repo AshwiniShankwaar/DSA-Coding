@@ -1,5 +1,6 @@
 package Prepration.array;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class ArrayRevision {
@@ -19,7 +20,26 @@ public class ArrayRevision {
 //        }
 
         //2d array
-
+        
+//        int[][] arr = new int[3][];//jagged array
+        int[][] arr =  new int[3][3];
+        for (int i = 0; i < arr.length; i++) {//row
+            for (int j = 0; j < arr[i].length; j++) {//column
+                arr[i][j] = (int) (Math.random()*100);
+            }
+        }
+//        for(int i =0;i<arr.length;i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
+//                System.out.print(arr[j][i]+" ");
+//            }
+//            System.out.println();
+//        }
+        for(int[] a: arr){
+            for (int i:a){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
     }
     public static int delete(int[] arr, int pos,int size){
         for (int i = pos;i< size-1;i++){

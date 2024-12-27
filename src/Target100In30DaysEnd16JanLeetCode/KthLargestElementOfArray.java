@@ -1,4 +1,4 @@
-package Target100In30DaysLeetCode;
+package Target100In30DaysEnd16JanLeetCode;
 
 import java.util.PriorityQueue;
 
