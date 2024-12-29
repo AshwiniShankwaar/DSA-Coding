@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 /**
  * Given a 0-indexed integer array nums, find a 0-indexed integer array answer where:
  *

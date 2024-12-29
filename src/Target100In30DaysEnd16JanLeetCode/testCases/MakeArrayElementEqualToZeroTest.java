@@ -1,6 +1,6 @@
 package Target100In30DaysEnd16JanLeetCode.testCases;
 
-import Target100In30DaysEnd16JanLeetCode.MakeArrayElementEqualToZero;
+import Target100In30DaysEnd16JanLeetCode.prefixSum.easy.MakeArrayElementEqualToZero;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

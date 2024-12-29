@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 /**
  * Question 303
  *Given an integer array nums, handle multiple queries of the following type:

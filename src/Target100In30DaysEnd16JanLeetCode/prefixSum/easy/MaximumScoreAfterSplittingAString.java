@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 /**
  * Given a string s of zeros and ones, return the maximum score after splitting the string into two
  * non-empty substrings (i.e. left substring and right substring).

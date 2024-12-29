@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.med;
 /**
  * Given an array of positive integers nums and a positive integer target, return the minimal length of a
  * subarray

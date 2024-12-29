@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 /**
  * Given an array of positive integers arr, return the sum of all possible odd-length subarrays of arr.
  *

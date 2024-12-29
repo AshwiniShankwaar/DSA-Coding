@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 /**
  * An ant is on a boundary. It sometimes goes left and sometimes right.
  *

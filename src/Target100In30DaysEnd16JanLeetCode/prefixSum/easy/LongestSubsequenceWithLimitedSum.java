@@ -1,7 +1,6 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.prefixSum.easy;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 /**
  * You are given an integer array nums of length n, and an integer array queries of length m.

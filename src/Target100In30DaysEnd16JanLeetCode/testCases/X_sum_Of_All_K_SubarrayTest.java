@@ -1,6 +1,6 @@
 package Target100In30DaysEnd16JanLeetCode.testCases;
 
-import Target100In30DaysEnd16JanLeetCode.X_sum_Of_All_K_Subarray;
+import Target100In30DaysEnd16JanLeetCode.slidingWindow.easy.X_sum_Of_All_K_Subarray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
