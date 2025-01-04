@@ -1,6 +1,6 @@
 package Target100In30DaysEnd16JanLeetCode.testCases;
 
-import Target100In30DaysEnd16JanLeetCode.PascalsTriangle;
+import Target100In30DaysEnd16JanLeetCode.Array.PascalsTriangle;
 import Target100In30DaysEnd16JanLeetCode.prefixSum.easy.PivotIndex;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

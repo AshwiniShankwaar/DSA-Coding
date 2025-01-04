@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.Array;
 
 /**
  * Question :

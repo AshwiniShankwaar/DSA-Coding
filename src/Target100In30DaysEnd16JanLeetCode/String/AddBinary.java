@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.String;
 /**
  * Given two binary strings a and b, return their sum as a binary string.
  * */

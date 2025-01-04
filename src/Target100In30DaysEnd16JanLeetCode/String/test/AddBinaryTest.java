@@ -1,6 +1,6 @@
-package Target100In30DaysEnd16JanLeetCode.testCases;
+package Target100In30DaysEnd16JanLeetCode.String.test;
 
-import Target100In30DaysEnd16JanLeetCode.AddBinary;
+import Target100In30DaysEnd16JanLeetCode.String.AddBinary;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

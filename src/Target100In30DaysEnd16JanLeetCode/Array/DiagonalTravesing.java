@@ -1,4 +1,4 @@
-package Target100In30DaysEnd16JanLeetCode;
+package Target100In30DaysEnd16JanLeetCode.Array;
 /**
  * Question:
  * Given an m x n matrix mat, return an array of all the elements of the array in a diagonal order.
