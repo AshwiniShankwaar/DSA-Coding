@@ -8,7 +8,7 @@ import java.util.HashMap;
  * */
 public class ContainDublicateII {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        HashMap<Integer,Integer> map = new HashMap<>();
         int i = 0;
         for(int num:nums){
             if (map.containsKey(num)){
