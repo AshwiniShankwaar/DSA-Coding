@@ -67,5 +67,14 @@ public class BasicJava {
         boolean b = false || true;
         char c = 'a';
         System.out.println(STR."b: \{b}, c: \{c}");
+
+        int octaLiterals = 010;
+        int hexaLiterals = 0x10; //while printing, it will convert into integer
+        System.out.println(STR."octaLiterals: \{octaLiterals}, hexaLiterals: \{hexaLiterals}");
+        int binaryLiteral = 0b11011010;
+        System.out.println(STR."binaryLiteral: \{binaryLiteral}");
+
+
+
     }
 }

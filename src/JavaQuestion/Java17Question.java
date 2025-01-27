@@ -295,7 +295,7 @@ public class Java17Question {
 //a) OBAD
 //b)ODDD
 //c)OBAC
-//d)ODAD
+//d)ODAD   right
 
 //Q19
 //public class Main {
@@ -309,7 +309,7 @@ public class Java17Question {
 //        new Main().print(0b11011010);
 //    }
 //}
-//What is the result?
+//What is the result?    A:hello
 
 //Q20
 
@@ -328,7 +328,7 @@ public class Java17Question {
 //        System.out.println("Caught " + e);
 //}
 //
-//What is the result?
+//What is the result?  A:Caught ZeroValueException
 
 //Q21
 //public class TestApp {
@@ -344,11 +344,14 @@ public class Java17Question {
 //    }
 //}
 //Which catch block can be inserted at line n1
+//A: catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+//            throw new RuntimeException(e);
+//        }
 
 //class Q22{
 //    public static void main(String[] args) {
 //        Stream.of (3, 6, 9, 12, 15, 18, 21, 24,27)
-//                .takeWhile(s -> 3% 3==0)
+//                .takeWhile(s -> s% 3==0)
 //                .dropWhile (s->s % 2 == 0)
 //                .limit(3)
 //                .forEach (s -> System.out.print(s + " "));
@@ -356,11 +359,12 @@ public class Java17Question {
 //
 //    }
 //}
+//A: 3,9,15
 
 //Q23
 //List<Integer> l1 =List. of (1, 3, 5, 7, 9);
 //List<Integer> l2 =List.of (2, 4, 6, 8);
-//List<List<Integer>> l3= List.of (11, 12);
+//List<List<Integer>> l3= List.of (l1, l2);
 //
 ////line nl
 //
@@ -372,6 +376,7 @@ public class Java17Question {
 //->List<Integer> 14 = 13.stream().flatMap(x -> x.stream().filter(y -> y > 5).toList();
 //->List<Integer> 14 = 13.stream().flatMap(x -> x.stream()).filter(y -> y > 5).collect (Collectors.toList());
 //->List<Integer> 14 = 13.stream().filter(y -> y > 5).collect();
+//A: 3 and 2
 
 //Q24
 //package pl;
@@ -412,7 +417,7 @@ public class Java17Question {
 //What is the result?
 //->aababc
 //->bcabbc
-//->acbcbc
+//->bcbcbc   right
 //->abc
 
 //Q26
@@ -451,7 +456,7 @@ public class Java17Question {
 //int saleAmount = 10000;
 //NumberFormat format1 = NumberFormat.getCurrencyInstance (Locale.US);
 //NumberFormat format2 = NumberFormat.getCompactNumber Instance (Locale.US, Style.SHORT);
-//String res formatl.format(saleAmount);
+//String res= format1.format(saleAmount);
 //System.out.println(res);
 //format2.format(Integer.valueOf(res));
 //System.out.println(saleAmount);
@@ -476,7 +481,7 @@ public class Java17Question {
 //->An ArithmeticException is thrown.
 //->1
 //->Ο
-//->1.1
+//->1.1 right
 
 //Q31
 //int a = 2;
@@ -486,6 +491,10 @@ public class Java17Question {
 //        System.out.println(d + ""+ c);
 //boolean e = a > b && a > c++;
 //        System.out.println(e +"" + c);
+
+//false 0
+//true 1
+
 
 //Q32
 //Assuming that the data.txt file exists and has the following content:
@@ -519,7 +528,7 @@ public class Java17Question {
 //else
 //    System.out.println("Can't logout");
 
-//What is the result?
+//What is the result?  can't logout
 
 //Q34
 //Daylight Saving Time (DST) is the practice of advancing clocks at the start of spring by one
