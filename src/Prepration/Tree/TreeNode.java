@@ -29,6 +29,7 @@ package Prepration.Tree;
  * internal nodes = n-1
  * no of leaf nodes = internal nodes + 1
  *
+ * for every node in the tree the height of left and right subtree is <=1 then it is a balanced tree.
  * */
 public class TreeNode {
     int val;

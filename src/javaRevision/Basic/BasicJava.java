@@ -74,7 +74,23 @@ public class BasicJava {
         int binaryLiteral = 0b11011010;
         System.out.println(STR."binaryLiteral: \{binaryLiteral}");
 
+        check(10,20); //it will first go for the int if there are many overloading method but
+        // var-arg will go only when there is no other metrhod of same name with permative data type
 
+        System.out.println(new String("hello") instanceof Object);
 
+    }
+    public static void check(short a,short b){
+        System.out.println("short:"+ a+b);
+    }
+    public static void check(int a,int b){
+        System.out.println("int:"+ a+b);
+    }
+
+    public static void check(long a,long b){
+        System.out.println("long:"+ a+b);
+    }
+    public static void check(int ... a){
+        System.out.println(a.length);
     }
 }
